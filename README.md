@@ -1,17 +1,21 @@
-[![](https://img.shields.io/pypi/pyversions/find.svg?longCache=True)](https://pypi.org/pypi/find/)
-[![](https://img.shields.io/pypi/v/find.svg?maxAge=3600)](https://pypi.org/pypi/find/)
+<!--
+https://pypi.org/project/readme-generator/
+-->
+
+[![](https://img.shields.io/pypi/pyversions/find.svg?longCache=True)](https://pypi.org/project/find/)
+[![](https://img.shields.io/pypi/v/find.svg?maxAge=3600)](https://pypi.org/project/find/)
 [![Travis](https://api.travis-ci.org/looking-for-a-job/find.py.svg?branch=master)](https://travis-ci.org/looking-for-a-job/find.py/)
 
-#### Install
+#### Installation
 ```bash
 $ [sudo] pip install find
 ```
 
 #### Functions
-function|description
+function|`__doc__`
 -|-
-`find.dirs(path, followlinks=False)`|return list of dirs
-`find.files(path, followlinks=False)`|return list of files
+`find.dirs(path, followlinks=False)` |return a list of dirs
+`find.files(path, followlinks=False)` |return a list of files
 
 #### Examples
 ```python
@@ -24,4 +28,6 @@ function|description
 ['path/to/package','path/to/tests',...]
 ```
 
-<p align="center"><a href="https://pypi.org/project/readme-md/">readme-md</a> - README.md generator</p>
+<p align="center">
+    <a href="https://pypi.org/project/readme-generator/">readme-generator</a>
+</p>

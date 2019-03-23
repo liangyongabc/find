@@ -21,11 +21,11 @@ def _iter_dirs(path, followlinks=False):
 
 @public.add
 def dirs(path, followlinks=False):
-    """return list of dirs"""
+    """return a list of dirs"""
     return list(_iter_dirs(path, followlinks))
 
 
 @public.add
 def files(path, followlinks=False):
-    """return list of files"""
+    """return a list of files"""
     return list(_iter_files(path, followlinks))
