@@ -1,6 +1,7 @@
-#!/usr/bin/env python
+__all__ = ['dirs', 'files']
+
+
 import os
-import public
 
 
 def _fullpath(path):
@@ -19,13 +20,11 @@ def _iter_dirs(path, followlinks=False):
             yield os.path.join(root, d)
 
 
-@public.add
 def dirs(path, followlinks=False):
     """return a list of dirs"""
     return list(_iter_dirs(path, followlinks))
 
 
-@public.add
 def files(path, followlinks=False):
     """return a list of files"""
     return list(_iter_files(path, followlinks))
